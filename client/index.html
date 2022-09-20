@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <video class="bg-video" autoplay="" playsinline="" muted="" loop=""><source src="./assets/bg-video.webm" type="video/webm"></video>
+
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="title"><h2>Python V Blockchain E-Credentials</h2></div>
+        <div class="connect" id="connect">
+            <button type="button" value="auth">Connect Wallet</button>
+        </div>
+
+        <div class="create-account" id="addaccount">
+            <span style="color:red; font-size: 13px;" class="address"></span>
+           <h3>Create User Credentials</h3>
+           <input type="text" id="username" placeholder="Username">
+           <input type="number"  id="pin" placeholder="User Passcode">
+           <button value="create" class="create">Create User Credentials</button>
+           <h4 style="color:red;" id="error"></h4>
+        </div>
+
+
+        <div class="login" id="login">
+            <span style="color:red;" class="address"></span>
+           <h3>Authnticate User Credentials</h3>
+           <input type="text" placeholder="Username">
+           <input type="text"  id="" placeholder="User Passcode">
+           <button value="login" class="create">Login</button>
+        </div>
+    </div>
+   
+    
+
+
+
+    <script src="./main.js" type="module" ></script>
+
+    <!-- <script type="module">
+        import { ethers } from "https://cdn.ethers.io/lib/ethers-5.0.umd.min.js";
+    </script> -->
+</body>
+</html>
