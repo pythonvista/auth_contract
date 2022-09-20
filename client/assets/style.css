@@ -49,6 +49,7 @@ body {
     align-items: center;
     padding: 20px 4px;
     gap: 20px;
+    text-align: center;
 }
 
 .connect {
@@ -149,4 +150,45 @@ input{
     background-color: yellow;
     color: black;
    
+}
+
+@media (max-width:750px) {
+    .bg-video {
+        display: none;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    body::after{
+        background-color: red;
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        top: -20px;
+        left: -20px;
+
+    }
+
+    body::before{
+        background-color: red;
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        bottom: -20px;
+        right: -20px;
+
+    }
+
+    .create-account {
+        width: 90%;
+    }
+
+    
+    
 }
