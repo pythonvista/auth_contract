@@ -38,7 +38,7 @@ async function connectWallet() {
       let accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       check();
     } else {
-      console.log('Wallect not connected');
+      alert('Wallect not connected.. Download Metamask Wallet');
     }
   } catch (err) {
     console.log(err);
